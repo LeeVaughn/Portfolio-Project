@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 
-
 /* Element Styles */
 
 body {
     margin: 0;
+    color: #808080;
 }
 
 header {
@@ -20,7 +20,7 @@ nav ul {
     margin: 0 10px 0 0;
 }
 
-li {
+nav li {
     display: inline-block;
     font-size: 1.5rem;
     /* 24px/16px */
@@ -55,7 +55,6 @@ h3 {
     text-align: center;
 }
 
-
 /* Class Styles */
 
 .main-header {
@@ -63,37 +62,76 @@ h3 {
     height: 850px;
 }
 
+.section {
+    width: 75%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: auto;
+    max-width: 960px;
+}
+
 .about-me {
-    color: #808080;
-    height: 400px;
+    height: 650px;
     text-align: center;
+    border-top: 5px solid #ffa949;
+    border-bottom: 5px solid #ffa949;
+    padding-top: 50px;
 }
 
 .profile-image {
     margin-top: 30px;
-    width: 150px;
-    height: 150px;
+    width: 225px;
+    height: 225px;
     border-radius: 50%;
-    border: 2px solid #808080;
+    border: 2px solid ffa949;
     transition: all .5s;
 }
 
 .profile-image:hover {
-    transform: scale(2) rotate(360deg);
+    transform: scale(1.5) rotate(360deg);
+}
+
+.about-me h3 {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .about-me p {
     text-align: center;
     font-size: 1.25rem;
-    width: 60%;
+    width: 55%;
     margin: 0 auto 0 auto;
 }
 
 .projects {
-    background: #b0c4de;
-    /*height: 900px;*/
+    text-align: center;
+    height: 650px;
+    border-bottom: 5px solid #ffa949;
 }
 
 .projects h3 {
     padding: 30px 0 15px 0;
+}
+
+/* Floated Columns */
+
+.tree,
+.tribute {
+    width: 50%;
+}
+
+.tree {
+    float: left;
+}
+
+.tribute {
+    float: right;
+}
+
+/* Float Clearfix */
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
 }
