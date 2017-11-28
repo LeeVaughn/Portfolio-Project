@@ -22,31 +22,30 @@ nav ul {
 
 nav li {
     display: inline-block;
-    font-size: 1.5rem;
-    /* 24px/16px */
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, .8);
+    font-size: 1.5rem; /* 24px/16px */
     padding: 15px;
 }
 
 h1 {
-    font-size: 4.375rem;
-    /* 70px/16px */
+    font-size: 4.375rem; /* 70px/16px */
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, .8);
     margin-top: 300px;
     margin-bottom: 40px;
 }
 
 h2 {
-    font-size: 2.5rem;
-    /* 40px/16px */
+    font-size: 2.5rem; /* 40px/16px */
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, .8);
 }
 
 h3 {
-    font-size: 1.875rem;
-    /* 30px/16px */
+    font-size: 1.875rem; /* 30px/16px */
+    text-decoration: underline #ffa949;
 }
 
 h4 {
-    font-size: 1.25rem;
-    /* 20px/16px */
+    font-size: 1.3125rem; /* 21px/16px */
 }
 
 h1,
@@ -55,25 +54,27 @@ h3 {
     text-align: center;
 }
 
-/* Class Styles */
-
-.main-header {
-    background: #00bfff url("https://regularlyscheduledprogrammingblog.files.wordpress.com/2017/10/programming-rooftop.jpg") no-repeat center / cover;
-    height: 850px;
-}
-
-.section {
-    width: 75%;
+section {
+    width: 70%;
     padding-left: 50px;
     padding-right: 50px;
     margin: auto;
     max-width: 960px;
 }
 
+/* Class Styles */
+
+.main-header {
+    background: #00bfff url("https://regularlyscheduledprogrammingblog.files.wordpress.com/2017/10/programming-rooftop.jpg") no-repeat center / cover;
+    height: 850px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 5px solid #ffa949;
+}
+
 .about-me {
     height: 650px;
     text-align: center;
-    border-top: 5px solid #ffa949;
     border-bottom: 5px solid #ffa949;
     padding-top: 50px;
 }
@@ -97,27 +98,48 @@ h3 {
 }
 
 .about-me p {
-    text-align: center;
-    font-size: 1.25rem;
+    font-size: 1.25rem; /* 20px/16px */
     width: 55%;
     margin: 0 auto 0 auto;
 }
 
 .projects {
+    display: block;
+    margin: auto;
+    width: 80%;
     text-align: center;
-    height: 650px;
+    height: 765px;
     border-bottom: 5px solid #ffa949;
 }
 
 .projects h3 {
-    padding: 30px 0 15px 0;
+    padding: 30px 0 30px 0;
+}
+
+.projects img {
+  max-width: 100%;
+  border: 2px solid black;
+}
+
+.projects-intro {
+  font-size: 1.25rem; /* 20px/16px */
+  width: 44%; /* equivilent of 55% of the 80% wide .project section */
+  margin: 0 auto 30px auto;
+}
+
+.languages {
+  font-style: italic;
+}
+
+.contact h3 {
+  padding-top: 30px;
 }
 
 /* Floated Columns */
 
 .tree,
 .tribute {
-    width: 50%;
+    width: 48.5%;
 }
 
 .tree {
