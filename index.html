@@ -3,65 +3,101 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>Lee Vaughn's Programming Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <meta name: "viewport" content="width=device-width">
+  <meta charset="utf-8">
+  <title>Lee Vaughn's Programming Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Josefin+Sans:400,400i" rel="stylesheet">
+  <script src="scripts.js"></script>
+  <meta name="viewport" content="width=device-width">
 </head>
 
 <body>
 
-    <header class="main-header">
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Projects</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-        <h1>Hello, my name is Lee Vaughn.</h1>
-        <h2>I design and build web applications.</h2>
-    </header>
+  <header class="main-header" id="home">
+    <nav>
+      <ul>
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <h1>Hello, my name is Lee Vaughn.</h1>
+    <h2>I design and build web applications.</h2>
+  </header>
 
-    <section class="about-me">
-        <img class="profile-image" src="https://regularlyscheduledprogrammingblog.files.wordpress.com/2017/11/profile.jpg" alt="Lee Vaughn Profile Picture">
-        <h3>About Me</h3>
-        <p>I am a self-taught programmer from Las Vegas, Nevada. I am currently focusing on HTML, CSS, and JavaScript and I
-            will soon be adding Python to my list of available tools.</p>
-    </section>
+  <section class="about-me" id="about">
+    <img class="profile-image" src="https://regularlyscheduledprogrammingblog.files.wordpress.com/2017/11/profile.jpg" alt="Lee Vaughn Profile Picture">
+    <h3>About Me</h3>
+    <p>I am a self-taught programmer from Las Vegas, Nevada. I am currently focusing on HTML, CSS, and JavaScript and will soon
+      be adding Python to my programming tool belt.</p>
+  </section>
 
-    <section class="projects group">
-        <h3>Projects</h3>
-        <p class="projects-intro">Here are some of the projects that I have completed. Underneath each project you can see the languages that particular project used.</p>
-        <div class="tree">
-            <h4>Holiday Tree Project</h4>
-            <img src="https://regularlyscheduledprogrammingblog.files.wordpress.com/2017/11/holiday-tree-project.jpg" alt="Holiday Tree Project Preview">
-            <p class="languages">HTML and CSS</p>
-        </div>
-        <div class="tribute">
-            <h4>Tribute Page</h4>
-            <img src="https://regularlyscheduledprogrammingblog.files.wordpress.com/2017/11/tribute-project-preview1.jpg" alt="Tribute Project Preview">
-            <p class="languages">HTML, CSS, and BootStrap</p>
-    </section>
-        
-    <section class="contact">
-        <h3>Contact Me</h3>
-        <div class="contact-form">
-            <form action="mailto:dlvprogramming@gmail.com" method="post" enctype="text/plain">
-                <label for"name">Your Name</label>
-                <input type="text" id="name" name="yourname" placeholder="John Smith">
-        
-                <label for="email">Email Address</label>
-                <input type="text" id="email" name="emailaddress" placeholder="yourname@email.com">
-        
-                <label for="msg">Message</label>
-                <textarea id="msg" name="message" placeholder="Your message here..." style="height: 200px"></textarea>
-        
-                <input type="submit" value="Submit">
-        
-            </form>
-        </div>
-    </section>
+  <section class="projects group" id="projects">
+    <h3>Projects</h3>
+    <p class="projects-intro">Here are some of the projects that I have completed. Underneath each project you can see the languages that particular
+      project used.</p>
+    <div class="tree">
+      <h4>Holiday Trees</h4>
+      <a href="http://holiday-trees.herokuapp.com/index.html" target="_blank">
+        <img src="https://regularlyscheduledprogrammingblog.files.wordpress.com/2017/11/holiday-tree-project.jpg" alt="Holiday Tree Project Preview">
+      </a>
+      <p class="languages">HTML and CSS</p>
+    </div>
+    <div class="tribute">
+      <h4>Tribute Page</h4>
+      <a href="https://codepen.io/Alebeard/full/qPaWQN/" target="_blank">
+        <img src="https://regularlyscheduledprogrammingblog.files.wordpress.com/2017/11/tribute-project-preview1.jpg" alt="Tribute Project Preview">
+      </a>
+      <p class="languages">HTML, CSS, and BootStrap</p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h3>Contact Me</h3>
+    <div class="contact-form">
+      <form action="mailto:dlvprogramming@gmail.com" method="post" enctype="text/plain">
+        <label for "name">Your Name</label>
+        <input type="text" id="name" name="yourname" placeholder="John Smith">
+
+        <label for="email">Email Address</label>
+        <input type="text" id="email" name="emailaddress" placeholder="yourname@email.com">
+
+        <label for="msg">Message</label>
+        <textarea id="msg" name="message" placeholder="Your message here..." style="height: 200px"></textarea>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <ul>
+      <li>
+        <a href="https://scheduledprogramming.com/" target="_blank" class="fa fa-wordpress"></a>
+      </li>
+      <li>
+        <a href="https://twitter.com/DLVProgramming" target="_blank" class="fa fa-twitter"></a>
+      </li>
+      <li>
+        <a href="https://github.com/LeeVaughn" target="_blank" class="fa fa-github"></a>
+      </li>
+      <li>
+        <a href="https://www.freecodecamp.org/leevaughn" target="_blank" class="fa fa-free-code-camp"></a>
+      </li>
+    </ul>
+  </footer>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
 </body>
+
+</html>
